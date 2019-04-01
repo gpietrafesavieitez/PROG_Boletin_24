@@ -6,19 +6,35 @@
 
 package boletin_24_1;
 
-import java.awt.Color;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import java.awt.*;
+import javax.swing.*;
 
 public class Ventana extends JFrame {
-    JPanel panel;
+    JPanel pane1, pane2;
+    JLabel labNombre, labClave;
+    JTextField textNombre;
+    JPasswordField textClave;
+    JButton btnEntrar, btnLimpiar;
     
-    public void crear() {
-        this.setSize(800,600);
+    void mostrar() {
+        this.setSize(650, 750);
         this.setDefaultCloseOperation(3);
         this.setVisible(true);
-        panel = new JPanel();
-        panel.setBackground(Color.LIGHT_GRAY);
-        this.add(panel);
+        this.setResizable(false);
+        pane1 = new JPanel();
+        pane1.setSize(600, 350);
+        pane1.setBackground(Color.red);
+        this.add(pane1, BorderLayout.NORTH);
+
+        btnEntrar = new JButton("ENTRAR");
+        pane1.add(btnEntrar);
+        
+
+        pane2 = new JPanel();
+        pane2.setSize(600, 350);
+        pane2.setBackground(Color.yellow);
+        this.add(pane2, BorderLayout.WEST);
+        btnLimpiar = new JButton("LIMPIAR");
+        pane2.add(btnLimpiar);
     }
 }
