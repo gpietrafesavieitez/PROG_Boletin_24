@@ -6,12 +6,13 @@
 
 package boletin_24_1;
 
-import java.awt.*;
-import javax.swing.*;
-
 public class Boletin_24_1 {
-
+    
     public static void main(String[] args) {
-
+        Coding ventana = new Coding();
+        ventana.mostrar();
+        
+        Palette window = new Palette();
+        window.show();
     }
 }
