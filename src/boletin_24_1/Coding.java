@@ -68,9 +68,9 @@ public class Coding extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e){
         if(e.getSource() == jButton1){
             if(!jTextField1.getText().isEmpty() && !jPasswordField1.getText().isEmpty()){
-                    JOptionPane.showMessageDialog(null, "Has entrado correctamente.", "Login", 1);
+                    JOptionPane.showMessageDialog(null, "Has entrado correctamente", "Login", 1);
                 }else{
-                    JOptionPane.showMessageDialog(null, "Los campos no pueden estar vacíos.", "Login", 2);
+                    JOptionPane.showMessageDialog(null, "Los campos no pueden estar vacíos", "Login", 2);
                 }
         }else if(e.getSource() == jButton2){
             jTextField1.setText("");
